@@ -94,7 +94,7 @@ void postData() {
 		clientGet.print("Host: ");
 		clientGet.println(getHost);
 		clientGet.println("User-Agent: ESP8266/1.0");
-		clientGet.println("Authorization: Basic c21hcnRtZXRlcjprbm9lcGll=");
+		clientGet.println("Authorization: Basic code=");
 		clientGet.println("Connection: close\r\n\r\n");
 		unsigned long timeoutP = millis();
 		while (clientGet.available() == 0) {
